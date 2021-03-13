@@ -1,10 +1,10 @@
 # defining a class with methods
 class myClass():
   def method1(self): 
-    print('myClass.method1')
+    print("myClass.method1")
 
   def method2(self, text):
-    print('myClass.method2 ' + text)
+    print("myClass.method2 " + text)
   
   # defining a class that inherits another class
 class anotherClass(myClass):
@@ -12,12 +12,12 @@ class anotherClass(myClass):
     myClass.method1(self)
 
   def method2(self, text):
-    print('anotherClass.method2 ' + text)
+    print("anotherClass.method2 " + text)
 
-o = myClass()
-o.method1()
-o.method2('foo')
+c = myClass()
+c.method1()
+c.method2("foo")
 
-o2 = anotherClass()
-o2.method1()
-o2.method2('bar')
+c2 = anotherClass()
+c2.method1()
+c2.method2("bar")

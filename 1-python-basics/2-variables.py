@@ -3,15 +3,16 @@ f = 0
 print(f)
 
 # re-declaring the variable
-f = 'foo'
+f = "foo"
 print(f)
 
 # variables of different types cannot be combined
-print('This is a string ' + str(123))
+# print("This is a string" + 123) / ERROR
+print("This is a string", 123)
 
 # global vs local variables in functions
 def someFunc():
-  f='bar'
+  f="bar"
   print(f)
 
 someFunc()

@@ -1,10 +1,10 @@
 # basic function
 def printFoo():
-  print('foo')
+  print("foo")
 
 # function that takes parameters
 def concat(txt1, txt2):
-  print(txt1, ' ', txt2)
+  print(txt1, " ", txt2)
 
 # function that returns a value
 def add(num1, num2):
@@ -22,7 +22,7 @@ def multi_add(*args):
   return result
 
 printFoo()
-concat('foo', 'bar')
+concat("foo", "bar")
 print(add(3, 3))
 print(multiply(3))
 print(multiply(3, 3))
