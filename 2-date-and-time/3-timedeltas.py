@@ -5,21 +5,25 @@ from datetime import timedelta
 
 print('a basic timedelta')
 print(timedelta(days=365,hours=5,minutes=1))
+print('\n')
 
-print('\ntoday\'s date')
+print('today\'s date')
 now = datetime.now()
-print('today is: ' + str(now))
+print(f'today is: {str(now)}')
+print('\n')
 
-print('\none year from now')
+print('one year from now')
 print(str(now + timedelta(days=365)))
+print('\n')
 
-print('\n3 weeks and 2 days from now')
+print('3 weeks and 2 days from now')
 print(str(now + timedelta(weeks=3,days=2)))
-
-print('\n1 week ago today')
+print('\n')
+print('\n 1 week ago today')
 print((now - timedelta(weeks=1)).strftime('%A %B %d, %Y'))
+print('\n')
 
-print('\ndays until the April Fools\' day')
+print('days until the April Fools\' day')
 today = date.today()
 afd = date(today.year, 4, 1)
 if afd < today:
